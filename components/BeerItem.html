@@ -1,0 +1,1354 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Stencil app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Stencil app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>BeerItem</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/components/beer-item/beer-item.tsx</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">tag</td>
+                <td class="col-md-9"><code>beer-item</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrl</td>
+                <td class="col-md-9"><code>beer-item.css</code></td>
+            </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#alertCtrl">alertCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#beer">beer</a>
+                            </li>
+                            <li>
+                                <a href="#beerDeleted">beerDeleted</a>
+                            </li>
+                            <li>
+                                <a href="#el">el</a>
+                            </li>
+                            <li>
+                                <a href="#fave">fave</a>
+                            </li>
+                            <li>
+                                <a href="#io">io</a>
+                            </li>
+                            <li>
+                                <a href="#toastCtrl">toastCtrl</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addIntersectionObserver">addIntersectionObserver</a>
+                            </li>
+                            <li>
+                                <a href="#componentDidLoad">componentDidLoad</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteBeer">deleteBeer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteBeerHelper">deleteBeerHelper</a>
+                            </li>
+                            <li>
+                                <a href="#handleAnimation">handleAnimation</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToDetail">navigateToDetail</a>
+                            </li>
+                            <li>
+                                <a href="#removeIntersectionObserver">removeIntersectionObserver</a>
+                            </li>
+                            <li>
+                                <a href="#render">render</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#save">save</a>
+                            </li>
+                            <li>
+                                <a href="#saveBeer">saveBeer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addIntersectionObserver"></a>
+                        <span class="name">
+                            <b>
+                            addIntersectionObserver
+                            </b>
+                            <a href="#addIntersectionObserver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>addIntersectionObserver()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/components/beer-item/beer-item.tsx:29</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="componentDidLoad"></a>
+                        <span class="name">
+                            <b>
+                            componentDidLoad
+                            </b>
+                            <a href="#componentDidLoad"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>componentDidLoad()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/components/beer-item/beer-item.tsx:25</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleteBeer"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Async</span>
+                            deleteBeer
+                            </b>
+                            <a href="#deleteBeer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>deleteBeer(beer: <a href="../interfaces/Beer.html">Beer</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/components/beer-item/beer-item.tsx:105</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>beer</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Beer.html" target="_self" >Beer</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleteBeerHelper"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Async</span>
+                            deleteBeerHelper
+                            </b>
+                            <a href="#deleteBeerHelper"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>deleteBeerHelper(passedBeer: <a href="../interfaces/Beer.html">Beer</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/components/beer-item/beer-item.tsx:121</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>passedBeer</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Beer.html" target="_self" >Beer</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="handleAnimation"></a>
+                        <span class="name">
+                            <b>
+                            handleAnimation
+                            </b>
+                            <a href="#handleAnimation"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>handleAnimation(element: HTMLElement)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/components/beer-item/beer-item.tsx:56</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>element</td>
+                                                        <td>
+                                                                    <code>HTMLElement</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navigateToDetail"></a>
+                        <span class="name">
+                            <b>
+                            navigateToDetail
+                            </b>
+                            <a href="#navigateToDetail"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>navigateToDetail(beerId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="132" class="link-to-prism">src/components/beer-item/beer-item.tsx:132</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>beerId</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removeIntersectionObserver"></a>
+                        <span class="name">
+                            <b>
+                            removeIntersectionObserver
+                            </b>
+                            <a href="#removeIntersectionObserver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>removeIntersectionObserver()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/components/beer-item/beer-item.tsx:49</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="render"></a>
+                        <span class="name">
+                            <b>
+                            render
+                            </b>
+                            <a href="#render"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>render()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/components/beer-item/beer-item.tsx:136</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="save"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Async</span>
+                            save
+                            </b>
+                            <a href="#save"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>save(beer: <a href="../interfaces/Beer.html">Beer</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/components/beer-item/beer-item.tsx:73</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>beer</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Beer.html" target="_self" >Beer</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>{}</code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveBeer"></a>
+                        <span class="name">
+                            <b>
+                            saveBeer
+                            </b>
+                            <a href="#saveBeer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>saveBeer(value: <a href="../interfaces/Beer.html">Beer</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/components/beer-item/beer-item.tsx:114</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>value</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Beer.html" target="_self" >Beer</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="alertCtrl"></a>
+                        <span class="name">
+                            <b>
+                            alertCtrl
+                            </b>
+                            <a href="#alertCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>alertCtrl:     <code>HTMLIonAlertControllerElement</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>HTMLIonAlertControllerElement</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop({connect: &#x27;ion-alert-controller&#x27;})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/components/beer-item/beer-item.tsx:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="beer"></a>
+                        <span class="name">
+                            <b>
+                            beer
+                            </b>
+                            <a href="#beer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>beer:     <code><a href="../interfaces/Beer.html" target="_self" >Beer</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/Beer.html" target="_self" >Beer</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/components/beer-item/beer-item.tsx:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="beerDeleted"></a>
+                        <span class="name">
+                            <b>
+                            beerDeleted
+                            </b>
+                            <a href="#beerDeleted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>beerDeleted:     <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Event()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/components/beer-item/beer-item.tsx:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="el"></a>
+                        <span class="name">
+                            <b>
+                            el
+                            </b>
+                            <a href="#el"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>el:     <code>HTMLElement</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>HTMLElement</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Element()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/components/beer-item/beer-item.tsx:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fave"></a>
+                        <span class="name">
+                            <b>
+                            fave
+                            </b>
+                            <a href="#fave"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>fave:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/components/beer-item/beer-item.tsx:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="io"></a>
+                        <span class="name">
+                            <b>
+                            io
+                            </b>
+                            <a href="#io"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>io:     <code>IntersectionObserver</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>IntersectionObserver</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/components/beer-item/beer-item.tsx:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toastCtrl"></a>
+                        <span class="name">
+                            <b>
+                            toastCtrl
+                            </b>
+                            <a href="#toastCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>toastCtrl:     <code>HTMLIonToastControllerElement</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>HTMLIonToastControllerElement</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop({connect: &#x27;ion-toast-controller&#x27;})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/components/beer-item/beer-item.tsx:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Prop, Element, Event, EventEmitter } from &#x27;@stencil/core&#x27;;
+
+import { Beer } from &#x27;../../global/interfaces&#x27;;
+import { checkAnon } from &#x27;../../global/utils&#x27;;
+
+declare var firebase: any;
+
+@Component({
+  tag: &#x27;beer-item&#x27;,
+  styleUrl: &#x27;beer-item.css&#x27;
+})
+export class BeerItem {
+
+  @Prop() beer: Beer;
+  @Prop() fave: Boolean &#x3D; false;
+  @Prop({ connect: &#x27;ion-toast-controller&#x27; }) toastCtrl: HTMLIonToastControllerElement;
+  @Prop({ connect: &#x27;ion-alert-controller&#x27; }) alertCtrl: HTMLIonAlertControllerElement;
+
+  @Element() el: HTMLElement;
+
+  @Event() beerDeleted: EventEmitter;
+
+  io: IntersectionObserver;
+
+  componentDidLoad() {
+    this.addIntersectionObserver();
+  }
+
+  addIntersectionObserver() {
+    if (&#x27;IntersectionObserver&#x27; in window) {
+      this.io &#x3D; new IntersectionObserver((data: IntersectionObserverEntry[]) &#x3D;&gt; {
+        // because there will only ever be one instance
+        // of the element we are observing
+        // we can just use data[0]
+        if (data[0].isIntersecting) {
+          this.handleAnimation((data[0].target as HTMLElement));
+          this.removeIntersectionObserver();
+        }
+      }, {
+          threshold: [0.2]
+        })
+
+      this.io.observe(this.el.querySelector(&#x27;ion-card&#x27;));
+    } else {
+      (this.el.querySelector(&#x27;ion-card&#x27;) as any).style.opacity &#x3D; &#x27;1&#x27;;
+    }
+  }
+
+  removeIntersectionObserver() {
+    if (this.io) {
+      this.io.disconnect();
+      this.io &#x3D; null;
+    }
+  }
+
+  handleAnimation(element: HTMLElement) {
+    if (&#x27;animate&#x27; in element) {
+      element.animate(
+        [
+          { transform: &#x27;translateY(20px)&#x27;, opacity: 0 },
+          { transform: &#x27;translateY(0)&#x27;, opacity: 1 }
+        ], {
+          duration: 300,
+          easing: &#x27;cubic-bezier(.36,.66,.04,1)&#x27;,
+          fill: &#x27;forwards&#x27;
+        }
+      )
+    } else {
+      (this.el.querySelector(&#x27;ion-card&#x27;) as any).style.opacity &#x3D; &#x27;1&#x27;;
+    }
+  }
+
+  async save(beer: Beer) {
+    console.log(&#x27;here&#x27;);
+    if (!checkAnon()) {
+      this.saveBeer(beer);
+
+      const toast &#x3D; await this.toastCtrl.create({ message: &#x27;beer favorited&#x27;, duration: 1000 });
+      await toast.present();
+    } else {
+      const alert &#x3D; await this.alertCtrl.create({
+        header: &#x27;Must login&#x27;,
+        message: &#x27;This feature is not available to anonymous users. Would you like to sign in with Google?&#x27;,
+        buttons: [
+          {
+            text: &#x27;Cancel&#x27;,
+            role: &#x27;cancel&#x27;,
+            cssClass: &#x27;secondary&#x27;,
+            handler: () &#x3D;&gt; {
+              console.log(&#x27;Confirm Cancel: blah&#x27;);
+            }
+          }, {
+            text: &#x27;Yes&#x27;,
+            handler: () &#x3D;&gt; {
+              const provider &#x3D; new firebase.auth.GoogleAuthProvider();
+              firebase.auth().currentUser.linkWithRedirect(provider);
+            }
+          }
+        ]
+      });
+      return await alert.present();
+    }
+  }
+
+  async deleteBeer(beer: Beer) {
+    await this.deleteBeerHelper(beer);
+
+    this.beerDeleted.emit();
+
+    const toast &#x3D; await this.toastCtrl.create({ message: &#x27;beer un-favorited&#x27;, duration: 1000 });
+    toast.present();
+  }
+
+  saveBeer(value: Beer) {
+    firebase.firestore().collection(&#x27;savedBeers&#x27;).add({
+      author: firebase.auth().currentUser.email,
+      beer: value
+    });
+  }
+
+  async deleteBeerHelper(passedBeer: Beer) {
+    const doc &#x3D; await firebase.firestore().collection(&#x27;savedBeers&#x27;)
+      .where(&#x27;beer.name&#x27;, &#x27;&#x3D;&#x3D;&#x27;, passedBeer.name)
+      .where(&#x27;author&#x27;, &#x27;&#x3D;&#x3D;&#x27;, (window as any).firebase.auth().currentUser.email)
+      .get();
+
+    doc.forEach((beer) &#x3D;&gt; {
+      beer.ref.delete();
+    })
+  }
+
+  navigateToDetail(beerId: string) {
+    (this.el.closest(&#x27;ion-nav&#x27;) as HTMLIonNavElement).push(&#x27;beer-detail&#x27;, { beerId });
+  }
+
+  render() {
+    return (
+      &lt;ion-card&gt;
+        &lt;ion-img src&#x3D;{this.beer.labels ? this.beer.labels.large : &#x27;/assets/beers.jpeg&#x27;} alt&#x3D;&#x27;beer&#x27;&gt;&lt;/ion-img&gt;
+        &lt;ion-card-content&gt;
+          &lt;ion-card-title&gt;
+            {this.beer.name}
+          &lt;/ion-card-title&gt;
+
+          &lt;p&gt;
+            {this.beer.description ? this.beer.description : &#x27;No description available&#x27;}
+          &lt;/p&gt;
+
+          &lt;ion-buttons slot&#x3D;&#x27;start&#x27;&gt;
+            {this.fave ?
+              &lt;ion-button color&#x3D;&#x27;danger&#x27; onClick&#x3D;{() &#x3D;&gt; this.deleteBeer(this.beer)} fill&#x3D;&#x27;clear&#x27; icon-only&gt;
+                &lt;ion-icon name&#x3D;&#x27;trash&#x27;&gt;&lt;/ion-icon&gt;
+              &lt;/ion-button&gt;
+              :
+              &lt;ion-button color&#x3D;&#x27;primary&#x27; onClick&#x3D;{() &#x3D;&gt; this.save(this.beer)} fill&#x3D;&#x27;clear&#x27; icon-only&gt;
+                &lt;ion-icon name&#x3D;&#x27;star&#x27;&gt;&lt;/ion-icon&gt;
+              &lt;/ion-button&gt;
+            }
+
+            &lt;share-button beer&#x3D;{this.beer}&gt;&lt;/share-button&gt;
+
+            &lt;ion-button href&#x3D;{&#x60;/home/beers/beer/${this.beer.id}&#x60;} slot&#x3D;&#x27;end&#x27; id&#x3D;&#x27;detailButton&#x27; color&#x3D;&#x27;primary&#x27; fill&#x3D;&#x27;clear&#x27;&gt;
+              Detail
+            &lt;/ion-button&gt;
+          &lt;/ion-buttons&gt;
+
+        &lt;/ion-card-content&gt;
+      &lt;/ion-card&gt;
+    );
+  }
+}</code></pre>
+    </div>
+
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div></div>'
+    var COMPONENTS = [{'name': 'AMRating', 'selector': ''},{'name': 'AuthPage', 'selector': ''},{'name': 'BarDirections', 'selector': ''},{'name': 'barList', 'selector': ''},{'name': 'BarPage', 'selector': ''},{'name': 'BeerDetail', 'selector': ''},{'name': 'BeerItem', 'selector': ''},{'name': 'BeerList', 'selector': ''},{'name': 'BeerPage', 'selector': ''},{'name': 'favoritesPage', 'selector': ''},{'name': 'FeedPage', 'selector': ''},{'name': 'FeedPageModal', 'selector': ''},{'name': 'LazyImg', 'selector': ''},{'name': 'PopoverPage', 'selector': ''},{'name': 'PostDetail', 'selector': ''},{'name': 'PostImg', 'selector': ''},{'name': 'PostItem', 'selector': ''},{'name': 'ProfileHeader', 'selector': ''},{'name': 'ProfilePage', 'selector': ''},{'name': 'SettingsPage', 'selector': ''},{'name': 'ShareButton', 'selector': ''},{'name': 'StencilBeer', 'selector': ''},{'name': 'StencilComponent', 'selector': ''},{'name': 'TabsPage', 'selector': ''},{'name': 'UserProfile', 'selector': ''},{'name': 'UsersList', 'selector': ''},{'name': 'UsersPage', 'selector': ''}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BeerItem'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BeerItem.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

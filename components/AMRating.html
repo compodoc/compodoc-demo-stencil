@@ -1,0 +1,1638 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Stencil app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Stencil app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AMRating</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/components/am-rating/am-rating.tsx</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>A simple rating component using StencilJS</p>
+
+    </p>
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">tag</td>
+                <td class="col-md-9"><code>am-rating</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrl</td>
+                <td class="col-md-9"><code>am-rating.css</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">shadow</td>
+                <td class="col-md-9"><code>true</code></td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allowHalfRatings">allowHalfRatings</a>
+                            </li>
+                            <li>
+                                <a href="#colorOff">colorOff</a>
+                            </li>
+                            <li>
+                                <a href="#colorOn">colorOn</a>
+                            </li>
+                            <li>
+                                <a href="#colorOutline">colorOutline</a>
+                            </li>
+                            <li>
+                                <a href="#direction">direction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#directionSettings">directionSettings</a>
+                            </li>
+                            <li>
+                                <a href="#interactive">interactive</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#internalRating">internalRating</a>
+                            </li>
+                            <li>
+                                <a href="#maxRating">maxRating</a>
+                            </li>
+                            <li>
+                                <a href="#minRating">minRating</a>
+                            </li>
+                            <li>
+                                <a href="#rating">rating</a>
+                            </li>
+                            <li>
+                                <a href="#ratingItems">ratingItems</a>
+                            </li>
+                            <li>
+                                <a href="#ratingUpdated">ratingUpdated</a>
+                            </li>
+                            <li>
+                                <a href="#reference">reference</a>
+                            </li>
+                            <li>
+                                <a href="#svgPoints">svgPoints</a>
+                            </li>
+                            <li>
+                                <a href="#svgViewBox">svgViewBox</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#componentWillLoad">componentWillLoad</a>
+                            </li>
+                            <li>
+                                <a href="#createRatingItems">createRatingItems</a>
+                            </li>
+                            <li>
+                                <a href="#handleMouseDown">handleMouseDown</a>
+                            </li>
+                            <li>
+                                <a href="#render">render</a>
+                            </li>
+                            <li>
+                                <a href="#updateRating">updateRating</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="componentWillLoad"></a>
+                        <span class="name">
+                            <b>
+                            componentWillLoad
+                            </b>
+                            <a href="#componentWillLoad"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>componentWillLoad()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/components/am-rating/am-rating.tsx:98</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Once the component is loaded do the setup</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createRatingItems"></a>
+                        <span class="name">
+                            <b>
+                            createRatingItems
+                            </b>
+                            <a href="#createRatingItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>createRatingItems()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/components/am-rating/am-rating.tsx:106</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Create rating items</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="handleMouseDown"></a>
+                        <span class="name">
+                            <b>
+                            handleMouseDown
+                            </b>
+                            <a href="#handleMouseDown"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>handleMouseDown(event)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/components/am-rating/am-rating.tsx:127</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Handle the mouse being pressed and update the internal rating</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="render"></a>
+                        <span class="name">
+                            <b>
+                            render
+                            </b>
+                            <a href="#render"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>render()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/components/am-rating/am-rating.tsx:160</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>When the state changes,
+render the view</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateRating"></a>
+                        <span class="name">
+                            <b>
+                            updateRating
+                            </b>
+                            <a href="#updateRating"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updateRating(newRating)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/components/am-rating/am-rating.tsx:146</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>newRating</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allowHalfRatings"></a>
+                        <span class="name">
+                            <b>
+                            allowHalfRatings
+                            </b>
+                            <a href="#allowHalfRatings"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>allowHalfRatings:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/components/am-rating/am-rating.tsx:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Determines if half ratings are allowed</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="colorOff"></a>
+                        <span class="name">
+                            <b>
+                            colorOff
+                            </b>
+                            <a href="#colorOff"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>colorOff:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;#ffffff&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/components/am-rating/am-rating.tsx:59</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The color to fill the rating with when it&#39;s outwith the max</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="colorOn"></a>
+                        <span class="name">
+                            <b>
+                            colorOn
+                            </b>
+                            <a href="#colorOn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>colorOn:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;#000000&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/components/am-rating/am-rating.tsx:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The color to fill the rating with when it&#39;s within the max</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="colorOutline"></a>
+                        <span class="name">
+                            <b>
+                            colorOutline
+                            </b>
+                            <a href="#colorOutline"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>colorOutline:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;#666666&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/components/am-rating/am-rating.tsx:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The color to fill the rating with when it&#39;s outwith the max</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="direction"></a>
+                        <span class="name">
+                            <b>
+                            direction
+                            </b>
+                            <a href="#direction"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>direction:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;ltr&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/components/am-rating/am-rating.tsx:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The direction of the shading.
+Valid settings are &#39;ltr&#39; (left to right) and &#39;ttb&#39; (top to bottom)</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="directionSettings"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            directionSettings
+                            </b>
+                            <a href="#directionSettings"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>directionSettings:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    &#x27;ltr&#x27; : { &quot;x1&quot; : &quot;0&quot;, &quot;x2&quot; : &quot;1&quot;,&quot;y1&quot; : &quot;0&quot;,&quot;y2&quot; : &quot;0&quot; },
+    &#x27;ttb&#x27; : { &quot;x1&quot; : &quot;0&quot;, &quot;x2&quot; : &quot;0&quot;,&quot;y1&quot; : &quot;0&quot;,&quot;y2&quot; : &quot;1&quot; }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/components/am-rating/am-rating.tsx:90</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Specifies the available gradient directions</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interactive"></a>
+                        <span class="name">
+                            <b>
+                            interactive
+                            </b>
+                            <a href="#interactive"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>interactive:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/components/am-rating/am-rating.tsx:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Determines if the user can set a rating</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="internalRating"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            internalRating
+                            </b>
+                            <a href="#internalRating"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>internalRating:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/components/am-rating/am-rating.tsx:85</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Keeps the internal rating (prop rating cannot be reassigned)</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="maxRating"></a>
+                        <span class="name">
+                            <b>
+                            maxRating
+                            </b>
+                            <a href="#maxRating"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>maxRating:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>5</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/components/am-rating/am-rating.tsx:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The maximum rating possible</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="minRating"></a>
+                        <span class="name">
+                            <b>
+                            minRating
+                            </b>
+                            <a href="#minRating"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>minRating:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/components/am-rating/am-rating.tsx:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The minimum rating possible</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rating"></a>
+                        <span class="name">
+                            <b>
+                            rating
+                            </b>
+                            <a href="#rating"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>rating:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/components/am-rating/am-rating.tsx:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The rating</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ratingItems"></a>
+                        <span class="name">
+                            <b>
+                            ratingItems
+                            </b>
+                            <a href="#ratingItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>ratingItems:     <code>Array&lt;object&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;object&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @State()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/components/am-rating/am-rating.tsx:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The rating items, set once the component is loaded</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ratingUpdated"></a>
+                        <span class="name">
+                            <b>
+                            ratingUpdated
+                            </b>
+                            <a href="#ratingUpdated"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>ratingUpdated:     <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Event()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/components/am-rating/am-rating.tsx:80</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Event fired when the rating is updated by user input</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reference"></a>
+                        <span class="name">
+                            <b>
+                            reference
+                            </b>
+                            <a href="#reference"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>reference:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;rating-component&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/components/am-rating/am-rating.tsx:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The rating identifier</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="svgPoints"></a>
+                        <span class="name">
+                            <b>
+                            svgPoints
+                            </b>
+                            <a href="#svgPoints"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>svgPoints:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;48 75 18.6107374 90.4508497 24.2235871 57.7254249 0.447174185 34.5491503 33.3053687 29.7745751 48 0 62.6946313 29.7745751 95.5528258 34.5491503 71.7764129 57.7254249 77.3892626 90.4508497&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/components/am-rating/am-rating.tsx:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>This is a star!</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="svgViewBox"></a>
+                        <span class="name">
+                            <b>
+                            svgViewBox
+                            </b>
+                            <a href="#svgViewBox"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>svgViewBox:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;0 0 100 100&quot;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Prop()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/components/am-rating/am-rating.tsx:75</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The view box for the SVG</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Prop, State, Event, EventEmitter } from &#x27;@stencil/core&#x27;;
+/**
+ * A simple rating component using StencilJS
+ */
+@Component({
+  tag: &#x27;am-rating&#x27;,
+  styleUrl: &#x27;am-rating.css&#x27;,
+  shadow: true
+})
+export class AMRating {
+   /**
+   * The rating identifier
+   */
+  @Prop() reference: string &#x3D; &quot;rating-component&quot;;
+
+   /**
+   * Determines if the user can set a rating
+   */
+  @Prop() interactive: boolean &#x3D; false;
+
+  /**
+   * The rating
+   */
+  @Prop() rating: number &#x3D; 0;
+
+  /**
+   * The minimum rating possible
+   */
+  @Prop() minRating: number &#x3D; 0;
+
+  /**
+   * The maximum rating possible
+   */
+  @Prop() maxRating: number &#x3D; 5;
+
+   /**
+   * Determines if half ratings are allowed
+   */
+  @Prop() allowHalfRatings: boolean &#x3D; false;
+
+  /**
+   * This is a star!
+   */
+  @Prop() svgPoints: string &#x3D; &quot;48 75 18.6107374 90.4508497 24.2235871 57.7254249 0.447174185 34.5491503 33.3053687 29.7745751 48 0 62.6946313 29.7745751 95.5528258 34.5491503 71.7764129 57.7254249 77.3892626 90.4508497&quot;;
+
+  /**
+   * The rating items, set once the component is loaded
+   */
+  @State() ratingItems: Array&lt;object&gt; &#x3D; [];
+
+  /**
+   * The color to fill the rating with when it&#x27;s within the max
+   */
+  @Prop() colorOn: string &#x3D; &quot;#000000&quot;;
+
+  /**
+   * The color to fill the rating with when it&#x27;s outwith the max
+   */
+  @Prop() colorOff: string &#x3D; &quot;#ffffff&quot;;
+
+  /**
+   * The color to fill the rating with when it&#x27;s outwith the max
+   */
+  @Prop() colorOutline: string &#x3D; &quot;#666666&quot;;
+
+   /**
+   * The direction of the shading.
+   * Valid settings are &#x27;ltr&#x27; (left to right) and &#x27;ttb&#x27; (top to bottom)
+   */
+  @Prop() direction: string &#x3D; &quot;ltr&quot;;
+
+   /**
+   * The view box for the SVG
+   */
+  @Prop() svgViewBox: string &#x3D; &quot;0 0 100 100&quot;;
+
+  /**
+   * Event fired when the rating is updated by user input
+   */
+  @Event() ratingUpdated: EventEmitter;
+
+  /**
+   * Keeps the internal rating (prop rating cannot be reassigned)
+   */
+  private internalRating: number &#x3D; 0;
+
+  /**
+   * Specifies the available gradient directions
+   */
+  private directionSettings &#x3D; {
+    &#x27;ltr&#x27; : { &quot;x1&quot; : &quot;0&quot;, &quot;x2&quot; : &quot;1&quot;,&quot;y1&quot; : &quot;0&quot;,&quot;y2&quot; : &quot;0&quot; },
+    &#x27;ttb&#x27; : { &quot;x1&quot; : &quot;0&quot;, &quot;x2&quot; : &quot;0&quot;,&quot;y1&quot; : &quot;0&quot;,&quot;y2&quot; : &quot;1&quot; }
+  };
+
+  /**
+   * Once the component is loaded do the setup
+   */
+  componentWillLoad() {
+    this.internalRating &#x3D; this.rating;
+    this.createRatingItems();
+  }
+
+  /**
+   * Create rating items
+   */
+  createRatingItems(){
+    let items &#x3D; [];
+
+    const ratingFloor &#x3D; Math.floor(this.internalRating);
+    const ratingRemainder &#x3D; this.internalRating % 1 * 100;
+
+    for(var i &#x3D; 0; i &lt; this.maxRating; i++){
+      const itemPercent &#x3D; i &lt; ratingFloor ? 100 : ( ratingFloor &#x3D;&#x3D;&#x3D; i ? ratingRemainder : 0 );
+
+      items.push({
+        svgPoints : this.svgPoints,
+        percent :  itemPercent + &quot;%&quot;
+      });
+    }
+
+    this.ratingItems &#x3D; items;
+  }
+
+  /**
+   * Handle the mouse being pressed and update the internal rating
+   */
+  handleMouseDown(event) {
+    let svgElement &#x3D;  event.path[2];
+
+    if(!svgElement.getBBox || !this.interactive){
+
+      return;
+    }
+
+    const clickPos &#x3D; event.offsetX;
+    const svgWidth &#x3D; svgElement.getBBox().width ;
+    const clickPercentage &#x3D; svgWidth/100*clickPos;
+
+    let newRating &#x3D; 0;
+    while((svgElement&#x3D;svgElement.previousSibling)!&#x3D;null) ++newRating;
+
+    newRating &#x3D; this.allowHalfRatings ? ( newRating + (clickPercentage &lt; 50 ? + 0.5 : 1) ) : ++newRating;
+    this.updateRating( newRating );
+  }
+
+  updateRating(newRating){
+    this.internalRating &#x3D; newRating;
+    this.createRatingItems();
+
+    this.ratingUpdated.emit( {
+      &#x27;reference&#x27; : this.reference,
+      &#x27;rating&#x27; : this.internalRating
+    });
+  }
+
+  /**
+   * When the state changes,
+   * render the view
+   */
+  render() {
+    return (
+      &lt;div&gt;
+        {this.ratingItems.map( (ratingItem) &#x3D;&gt;
+        &lt;svg
+          viewBox&#x3D;{this.svgViewBox}
+          version&#x3D;&quot;1.1&quot;
+          width&#x3D;&#x27;12px&#x27;
+          height &#x3D; &#x27;12px&#x27;
+          xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;
+          class&#x3D;&quot;rating-item&quot;
+          onMouseDown&#x3D;{ () &#x3D;&gt; this.handleMouseDown(event) }
+          &gt;
+            &lt;defs&gt;
+              &lt;linearGradient
+                id&#x3D;{&quot;fill-&quot; + ratingItem[&#x27;percent&#x27;]}
+                x1&#x3D;{this.directionSettings[this.direction][&#x27;x1&#x27;]}
+                x2&#x3D;{this.directionSettings[this.direction][&#x27;x2&#x27;]}
+                y1&#x3D;{this.directionSettings[this.direction][&#x27;y1&#x27;]}
+                y2&#x3D;{this.directionSettings[this.direction][&#x27;y2&#x27;]}
+              &gt;
+                &lt;stop offset&#x3D;{ratingItem[&#x27;percent&#x27;]} stop-color&#x3D;{this.colorOn} stop-opacity&#x3D;&quot;1&quot;/&gt;
+                &lt;stop offset&#x3D;{ratingItem[&#x27;percent&#x27;]}  stop-color&#x3D;{this.colorOff} stop-opacity&#x3D;&quot;1&quot;/&gt;
+              &lt;/linearGradient&gt;
+            &lt;/defs&gt;
+            &lt;g
+              stroke&#x3D;&quot;none&quot;
+              stroke-width&#x3D;&quot;1&quot;&gt;
+                &lt;polygon
+                  id&#x3D;&quot;star&quot;
+                  stroke&#x3D;{this.colorOutline}
+                  stroke-width&#x3D;&quot;1&quot;
+                  class&#x3D;{&quot;rating-item-shape rating-item-shape-fill-percent-&quot; + ratingItem[&#x27;percent&#x27;]}
+                  fill&#x3D;{&quot;url(#fill-&quot; +  ratingItem[&#x27;percent&#x27;] + &quot;)&quot;}
+                  points&#x3D;{ ratingItem[&#x27;svgPoints&#x27;] }&gt;
+              &lt;/polygon&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+        )}
+      &lt;/div&gt;
+    );
+  }
+}</code></pre>
+    </div>
+
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div></div>'
+    var COMPONENTS = [{'name': 'AMRating', 'selector': ''},{'name': 'AuthPage', 'selector': ''},{'name': 'BarDirections', 'selector': ''},{'name': 'barList', 'selector': ''},{'name': 'BarPage', 'selector': ''},{'name': 'BeerDetail', 'selector': ''},{'name': 'BeerItem', 'selector': ''},{'name': 'BeerList', 'selector': ''},{'name': 'BeerPage', 'selector': ''},{'name': 'favoritesPage', 'selector': ''},{'name': 'FeedPage', 'selector': ''},{'name': 'FeedPageModal', 'selector': ''},{'name': 'LazyImg', 'selector': ''},{'name': 'PopoverPage', 'selector': ''},{'name': 'PostDetail', 'selector': ''},{'name': 'PostImg', 'selector': ''},{'name': 'PostItem', 'selector': ''},{'name': 'ProfileHeader', 'selector': ''},{'name': 'ProfilePage', 'selector': ''},{'name': 'SettingsPage', 'selector': ''},{'name': 'ShareButton', 'selector': ''},{'name': 'StencilBeer', 'selector': ''},{'name': 'StencilComponent', 'selector': ''},{'name': 'TabsPage', 'selector': ''},{'name': 'UserProfile', 'selector': ''},{'name': 'UsersList', 'selector': ''},{'name': 'UsersPage', 'selector': ''}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AMRating'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AMRating.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,18 @@
+language: node_js
+branches:
+  only:
+  - master
+node_js:
+- '9'
+cache:
+  directories:
+  - node_modules
+install:
+- npm install
+script:
+- npm run doc
+- bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/compodoc/compodoc-demo-stencil.git
+  - secure: x92HdNuE8vJptQKNrV7fNnASsP18K4XJExV3LZ0/zuy9Dp0n5aES7XwBOf/41ukKZz1fLNNh3eIh8XqON9hbThCaaM+bCipXHYTKHyKpZpoMRNqUn2ukeXgAuAN3gOOEBP8jM71XAfJTPwIuOuRCrEgAf/a1d8oXWYoDOuq7YTQvgnSEt3LAjDmeimeTM8o6F3j9b95z6Ha1spxLNUS6dndGMCApC48vTGgFDR8keEtm3WeAMZrkQzPcaS3BLm29V4WzhPXe6quuj7l94ct1vGXuMVp+3tqZd7DdRxqzfsmapHYQuU+a6A1oa3nTs0X07wmF+8OBCCUf5yuaZEs34Dzs9wjgoEt29JT2c/mDuPTVrvVtxu8LKN7bSXchPPV9+FtraRWTWmpwr+bnRr/wQm3R6fG4LohVQ5me83jehwvT3FnmJJb9Gh3HpluCeRKeSJ1WtenvFJlqvGNgFRipHX+1xtAex6/v5gJ4VVDantdZfaHYQVouU/q+IF1WIOhQSlkKLoWQY19YBnDEYJjJSSiskEgIBMJeONFPezU5qsasPZNwWLkVtQAHy7cO+Y8WEAoiwR5E1/WwqDwCX0oIuBn0dYwiagP68Z4x45r1tFlYIwziK/CqyPY/oRXPiklJ/RlbL7vB0DS6YZKTq5BNyKFvM1rKWiRrvNyvVtFLUEQ=
